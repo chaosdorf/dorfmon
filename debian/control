@@ -1,0 +1,21 @@
+Source: dorfmon
+Section: admin
+Priority: optional
+Maintainer: Daniel Friesel <derf@chaosdorf.de>
+Uploaders: Daniel Friesel <derf@chaosdorf.de>
+Build-Depends: debhelper (>= 7), dh-systemd
+Standards-Version: 3.9.4
+Homepage: http://github.com/chaosdorf/dorfmon
+Vcs-Git: http://github.com/chaosdorf/dorfmon.git
+Vcs-Browser: http://github.com/chaosdorf/dorfmon
+
+Package: dorfmon
+Architecture: all
+Depends: ${misc:Depends},
+ etckeeper,
+ git-core,
+ htop,
+ sudo,
+ vim,
+ zsh
+Description: Chaosdorf monitoring scripts
