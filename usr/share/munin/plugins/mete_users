@@ -11,7 +11,7 @@ use utf8;
 use JSON;    # automatically uses JSON::XS if available
 use LWP::Simple;
 
-my $raw_json = get('http://mete/users/stats.json');
+my $raw_json = get('http://mete/api/v1/users/stats.json');
 my $json = from_json($raw_json);
 
 if ( @ARGV and $ARGV[0] eq 'autoconf' ) {
